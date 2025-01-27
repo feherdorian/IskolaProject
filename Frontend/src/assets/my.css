@@ -1,0 +1,193 @@
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+  background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #58c2ff;
+  background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, .4) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .4) 50%, rgba(255, 255, 255, .4) 75%, transparent 75%, transparent);
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #F5F5F5;
+}
+
+.my-container {
+  max-width: 1200px;
+}
+
+.my-border {
+  border: 1px dashed black;
+}
+
+.my-cursor-pointer {
+  cursor: pointer;
+}
+
+.tabla-container {
+  max-height: 500px;
+  overflow: auto;
+}
+
+.table th,
+.table td {
+  vertical-align: middle;
+}
+
+.table-hover tbody tr:hover {
+  background-color: #f1f1f1;
+  cursor: pointer;
+}
+
+.table th,
+.table td {
+  text-align: center;
+}
+
+.table-dark th {
+  background-color: #343a40;
+  color: white;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+  background-color: #f8f9fa;
+}
+
+.shadow-sm {
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.rounded {
+  border-radius: 8px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.updating {
+  pointer-events: none;
+  opacity: 0.6;
+}
+
+.pagination-container {
+  display: flex;
+  max-width: 1000px;
+  overflow-x: auto;
+  gap: 5px;
+}
+
+.page-box {
+  min-width: 40px;
+  line-height: 40px;
+  margin-bottom: 10px;
+  text-align: center;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: #f8f9fa;
+  font-weight: bold;
+  transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+
+}
+
+.page-box:hover {
+  background-color: #58c2ff;
+  background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, .4) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .4) 50%, rgba(255, 255, 255, .4) 75%, transparent 75%, transparent);
+  color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.active-page {
+  background-color: #58c2ff;
+  color: white;
+  transition: 0.3s;
+  background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, .4) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .4) 50%, rgba(255, 255, 255, .4) 75%, transparent 75%, transparent);
+}
+
+@media (max-width: 991px) {
+  table {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    border: 0;
+  }
+
+  thead {
+    display: none;
+  }
+
+  tbody {
+    display: block;
+    width: 100%;
+  }
+
+  tbody tr {
+    display: block;
+    margin-bottom: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #f8f9fa;
+  }
+
+  tbody tr:hover {
+    background-color: #e9ecef;
+  }
+
+  td {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.9rem;
+    padding: 5px 10px;
+    border-bottom: 1px solid #222 !important;
+  }
+
+  td:last-child {
+    justify-content: center;
+    border-bottom: 0 !important;
+  }
+
+  td:before {
+    content: attr(data-label);
+    font-weight: bold;
+    text-transform: capitalize;
+    color: #6c757d;
+  }
+
+  td span {
+    text-align: right;
+    /* color: #212529; */
+  }
+
+  .sportokLista {
+    width: 100% !important;
+  }
+
+  .sportokLista:hover > .sportokRows {
+    display: none;
+  }
+
+  .sport-tooltip {
+    position: relative !important;
+    left: -10px !important;
+    width: auto !important;
+  }
+
+  .sport-tooltip {
+    background-color: transparent !important;
+    color: black !important;
+    text-align: center;
+    box-shadow: 0 0 0 !important;
+    max-width: 100%;
+    z-index: 1000;
+  }
+  
+  .sport-tooltip span {
+    text-wrap: nowrap !important;
+  }
+}

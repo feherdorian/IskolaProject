@@ -1,0 +1,9 @@
+@import './my.css';
+
+* {
+    user-select: none;
+}
+
+.active {
+    --bs-table-bg: rgba(0, 0, 255, .1) !important;
+}
